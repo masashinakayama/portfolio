@@ -1,0 +1,280 @@
+/*-- common.css --*/
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  }
+
+
+
+html {
+    /* ルートのフォントサイズを10pxに設定しておく */
+	font-size: 62.5%;
+}
+
+body {
+	/* ルートのフォントサイズを1.6em（16pxと同等のサイズ）に設定 */
+    /* chormだとバグを起こすからemで指定する。 */
+    font-size: 1.6em;
+    color: #333333;
+    background-color: #fbfbfb;
+    filter: brightness(105%);
+    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    /*font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; */
+}
+
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.btn {
+    background-color: #F3F5F8;  
+    color: #333333;
+    box-shadow: 3px 3px 3px #333333;
+    transition: .7s;
+}
+.btn:hover {
+    background-color: #333333;
+    color: #f3f5f8;
+    box-shadow: 1px 1px 1px #333333;
+}
+
+
+
+/*  ページネーション */
+
+.current {
+    background-color: #3f51b5;
+    color: white;
+    }
+.page-numbers {
+    padding: 5.4px 7.6px;
+    margin-right: 8px;
+}
+.next {
+    color: #3f51b5;
+}
+.prev {
+    color: #3f51b5;
+}
+
+
+
+
+/*   h1を動かす   */
+
+  
+.main2 {
+  width: 763px;
+  max-width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.main2 .text {
+  width: inherit;
+  height: inherit;
+  width: 763px;
+  max-width: 100%;
+  left: 2px;
+  top: 0px;
+  position: absolute;
+  animation-name: textBlink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+.shadow {
+  position: absolute;
+  width: 763px;
+  max-width: 100%;
+  height: 40px;
+  overflow: hidden;
+  animation-name: shadowDown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.shadow .viewport {
+  position: relative;
+  width: 763px;
+  max-width: 100%;
+  height: 200px;
+}
+
+.shadow .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  animation-name: shadowTextUp;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textBlink {
+  0% {
+    opacity: 1;
+    left: 2px;
+  }
+  30% {
+    opacity: .7;
+  }
+  70% {
+    opacity: .8;
+    left: -2px;
+  }
+  71% {
+    opacity: .8;
+    left: 0px;
+  }
+  75% {
+    opacity: .8;
+    left: 1px;
+  }
+  100% {
+    opacity: .7;
+    left: 0px;
+  }
+}
+
+@keyframes shadowDown {
+  0% {
+    top: 0px;
+  }
+  10% {
+    top: 20px;
+  }
+  20% {
+    top: 30px;
+  }
+  40% {
+    top: 35px;
+  }
+  60% {
+    top: 50px;
+  }
+  70% {
+    top: 20px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+@keyframes shadowTextUp {
+  0% {
+    top: 0px;
+  }
+  10% {
+    top: -20px;
+    opacity: .5;
+  }
+  20% {
+    top: -30px;
+    opacity: 1;
+  }
+  40% {
+    top: -35px;
+  }
+  60% {
+    top: -50px;
+    opacity: .5;
+  }
+  70% {
+    top: -20px;
+  }
+  100% {
+    top: -10px;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+/*  font-sizeの設定  */
+
+
+h1{
+    /* 70px */
+    font-size: 7.0rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+h2{
+	/* 38px */
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px #504f4f;
+}
+.txtl {
+     font-size: 2.4rem;
+     font-weight: 600;
+}
+.txts {
+    font-size: 1.4rem;
+}
+
+
+
+@media screen and (min-width:768px) and ( max-width:1023px) {
+/* for iPad */
+h1{
+    /* 70px */
+    font-size: 6.0rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+h2{
+	/* 38px */
+    font-size: 4.6rem;
+    font-weight: 600;
+}
+.txtl {
+     font-size: 1.8rem;
+     font-weight: 600;
+}
+.txts {
+    font-size: 1.2rem;
+}
+
+}
+
+
+
+@media screen and (max-width:767px) { 
+ /* for iPhone Landscape (iPhone 横) */
+ h1 {
+    /* 70px */
+    font-size: 4.5rem;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+}
+h2{
+	/* 38px */
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+.txtl {
+     font-size: 1.4rem;
+     font-weight: 600;
+}
+.txts {
+    font-size: 1.0rem;
+}
+}
