@@ -12,7 +12,7 @@
   <h2>Works</h2>
 
   <?php $paged = get_query_var('paged'); ?>
-<?php query_posts("posts_per_page=6&paged=$paged"); ?>
+<?php query_posts("posts_per_page=9&paged=$paged"); ?>
 
 <?php if (have_posts()) : ?>
 

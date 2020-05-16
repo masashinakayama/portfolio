@@ -32,7 +32,7 @@
    <?php if(get_field('repeat_skill')): ?>
    <?php while(the_repeater_field('repeat_skill')): ?>
        <div class="skills-box box1">
-       <img src="<?php echo get_template_directory_uri() ?>/img/skill1.png" alt="ロゴの写真">
+         <img src="<?php echo get_template_directory_uri() ?>/img/skill1.png" alt="ロゴの写真">
          <p class="txtl"><?php the_sub_field('skill_name'); ?></p>
          <p class="text"><?php the_sub_field('skill_nai'); ?></p>
        </div>
@@ -87,9 +87,10 @@
 <section class="works">
 <div class="inner">
   <h2>Works</h2>
+  <p class="txtl sub-name">《 Web制作 》</p>
 
   <?php $paged = get_query_var('paged'); ?>
-<?php query_posts("posts_per_page=6&paged=$paged"); ?>
+<?php query_posts("posts_per_page=3&paged=$paged"); ?>
 
 <?php if (have_posts()) : ?>
 
@@ -113,12 +114,47 @@
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
 
+</section>
 
 
 
-  <a href="<?php echo esc_url( home_url() ); ?>/Works" class="btn works-btn">More</a>
+
+<!-- works2 -->
+<section class="works works2">
+<div class="inner">
+  <p class="txtl sub-name">《 PHP(Laravel) 》</p>
+
+<?php
+	global $post;
+	$args = array( 'posts_per_page' => 3, 'cat' => 3 );
+	$myposts = get_posts( $args );
+?>
+
+<div class="works-boxs">
+  <?php foreach( $myposts as $post ):?>
+    <?php setup_postdata($post); ?>
+  
+  <div class="works-box">
+   <a href="<?php the_permalink(); //記事のリンクを表示 ?>">     
+   <?php
+             if ( has_post_thumbnail() ) {
+               the_post_thumbnail( 'large' );
+             }
+        ?>
+  <div class="wbp"><p class="txtl"><?php the_title(); //タイトルを表示 ?></p></div>
+  </a>
+</div>
+<?php endforeach; ?>
+</div>
+
+<?php wp_reset_postdata(); ?>
+
+
+<a href="<?php echo esc_url( home_url() ); ?>/Works" class="btn works-btn">More</a>
 </div>
 </section>
+
+
 
 
 

@@ -142,7 +142,7 @@
         margin-right: 20px;
         margin-bottom: 20px;
         width: 360px;
-        height: 370px;
+        height: 340px;
         filter: brightness(200%);
     }
     .skills-box:last-child {
@@ -150,16 +150,16 @@
     }
     
     .box1 {
-        background-color: #0B1C34;
-        box-shadow: 8px 8px rgb(0, 20, 48);
+        background-color: #0c203d;
+        box-shadow: 12px 12px #061730;
     }
     .box2 {
         background-color: #382D2A;
-        box-shadow: 8px 8px rgb(51, 35, 31);
+        box-shadow: 12px 12px rgb(51, 35, 31);
     }
     .box3 {
         background-color: #054387;
-        box-shadow: 8px 8px #023368;
+        box-shadow: 12px 12px #023368;
     }
     .skills-box img {
         text-align: center;
@@ -170,8 +170,9 @@
     }
     
     .skills-box .txtl {
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 6px;
+        padding-bottom: 10px;
+		  font-weight: 700;
     }
     .skills-box .text {
        line-height: 3.2rem;
@@ -194,8 +195,10 @@
 
 .works {
     width: 100%;
-    margin-bottom: 170px;
     padding: 24px;
+}
+.works2 {
+    margin-bottom: 170px;
 }
 
 .works .inner {
@@ -204,25 +207,38 @@
     margin: 0 auto;
     text-align: center;
     padding: 0 24px;
-    padding-bottom: 70px;
-    border: 8px solid #CECECC;
+    border: 8px solid rgb(197, 179, 167);
+    box-shadow: 0px 0px 0px 10px #CECECC;
     border-radius: 5px;
+}
+.works2 .inner {
+    padding-bottom: 50px;
+    border: 8px solid #a2bad3;
+    box-shadow: 0px 0px 0px 10px #CECECC;
 }
 
 .works .inner h2 {
     padding-top: 35px;
     padding-bottom: 60px;
 }
+.works .inner p {
+    padding-bottom: 50px;
+}
+.works2 .inner .sub-name {
+    padding-bottom: 50px;
+    padding-top: 65px;
+    text-align: center;
+}
 .works .inner .works-boxs {
-    padding: 40px 24px 40px;
+    padding: 40px 24px 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 .works .inner .works-boxs .works-box {
     height: 300px;
-    width: calc(50% - (50px * 1) / 2);
-    margin-right: 50px;
+    width: calc(50% - (60px * 1) / 2);
+    margin-right: 60px;
     margin-bottom: 90px;
     position: relative;
 }
@@ -306,7 +322,7 @@
     text-decoration: none;
     padding: 16px 84px;
     position: relative;
-    top: 20px; 
+    bottom: 0px; 
 }
     
     
@@ -669,7 +685,8 @@
     text-align: center;
     padding: 0 24px;
     padding-bottom: 70px;
-    border: 8px solid #CECECC;
+    border: 8px solid rgb(197, 179, 167);
+    box-shadow: 0px 0px 0px 10px #CECECC;
     border-radius: 5px;
 }
 
@@ -687,8 +704,8 @@
 }
 .works-page .inner .works-boxs .works-box {
     height: 300px;
-    width: calc(50% - (50px * 1) / 2);
-    margin-right: 50px;
+    width: calc(50% - (60px * 1) / 2);
+    margin-right: 60px;
     margin-bottom: 90px;
     position: relative;
 }

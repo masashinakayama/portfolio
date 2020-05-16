@@ -137,7 +137,7 @@ header .inner {
     margin-right: 45px;
     border-radius: 10px;
     width: 400px;
-    height: 420px;
+    height: 380px;
     filter: brightness(200%);
     
 }
@@ -146,16 +146,16 @@ header .inner {
 }
 
 .box1 {
-    background-color: #0B1C34;
-    box-shadow: 8px 8px rgb(0, 20, 48);
+    background-color: #0c203d;
+    box-shadow: 12px 12px #061730;
 }
 .box2 {
     background-color: #382D2A;
-    box-shadow: 8px 8px rgb(51, 35, 31);
+    box-shadow: 12px 12px rgb(51, 35, 31);
 }
 .box3 {
     background-color: #054387;
-    box-shadow: 8px 8px #023368;
+    box-shadow: 12px 12px #023368;
 }
 
   
@@ -168,7 +168,7 @@ header .inner {
 }
 
 .skills-box .txtl {
-    padding-top: 16px;
+    padding-top: 12px;
     padding-bottom: 16px;
     font-weight: 700;
 }
@@ -199,35 +199,48 @@ header .inner {
 
 .works {
     width: 100%;
-    margin-bottom: 170px;
     padding: 24px;
 }
-
+.works2 {
+    margin-bottom: 170px;
+}
 .works .inner {
     width: 1280px;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
     padding: 0 24px;
-    padding-bottom: 70px;
-    border: 8px solid #CECECC;
+    border: 8px solid rgb(197, 179, 167);
+    box-shadow: 0px 0px 0px 10px #CECECC;
     border-radius: 5px;
 }
-
+.works2 .inner {
+    padding-bottom: 50px;
+    border: 8px solid #a2bad3;
+    box-shadow: 0px 0px 0px 10px #CECECC;
+}
 .works .inner h2 {
     padding-top: 35px;
     padding-bottom: 60px;
 }
+.works .inner p {
+    padding-bottom: 50px;
+}
+.works2 .inner .sub-name {
+    padding-bottom: 50px;
+    padding-top: 65px;
+    text-align: center;
+}
 .works .inner .works-boxs {
-    padding: 40px 24px 40px;
+    padding: 40px 24px 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 .works .inner .works-boxs .works-box {
     height: 300px;
-    width: calc(33.333% - (50px * 2) / 3);
-    margin-right: 50px;
+    width: calc(33.333% - (60px * 2) / 3);
+    margin-right: 60px;
     margin-bottom: 90px;
     position: relative;
 }
@@ -311,7 +324,7 @@ header .inner {
     text-decoration: none;
     padding: 16px 84px;
     position: relative;
-    top: 20px; 
+    bottom: 0px; 
 }
 
 
@@ -688,7 +701,8 @@ footer .inner {
     text-align: center;
     padding: 0 24px;
     padding-bottom: 70px;
-    border: 8px solid #CECECC;
+    border: 8px solid rgb(197, 179, 167);
+    box-shadow: 0px 0px 0px 10px #CECECC;
     border-radius: 5px;
 }
 
@@ -705,8 +719,8 @@ footer .inner {
 }
 .works-page .inner .works-boxs .works-box {
     height: 300px;
-    width: calc(33.333% - (50px * 2) / 3);
-    margin-right: 50px;
+    width: calc(33.333% - (60px * 2) / 3);
+    margin-right: 60px;
     margin-bottom: 90px;
     position: relative;
 }
