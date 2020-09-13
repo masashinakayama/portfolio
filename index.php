@@ -1,7 +1,5 @@
  <?php get_header(); ?>
 
-
-
   <!-- main -->
     <section class="main">
       <div class="inner">
@@ -9,9 +7,6 @@
         <p></p>
       </div>
     </section>
-
-
-
 
 <!-- skills -->
 
@@ -38,14 +33,6 @@
      <a href="Skills" class="btn">More</a>
    </div>
 </section>
-
-
-
-
-
-
-
-
 
 <!-- works -->
 
@@ -78,22 +65,12 @@
           <?php endwhile; ?>
           </div><!-- /entries -->
           <?php endif; ?>
-           
 
     </div>
-
-
-
 
     <a href="<?php echo esc_url( home_url() ); ?>/Works" class="btn works-btn">More</a>
   </div>
 </section>
-
-
-
-
-
-
 
 <!-- contact -->
 
@@ -110,18 +87,10 @@
    </div>
 </section>
 
-
-
-
-
 <!-- top -->
 
 <section class="top">
 <a href="#"><i class="fa fa-sort-up"></i></a>
 </section>
-
-
-
-
 
 <?php get_footer(); ?>
